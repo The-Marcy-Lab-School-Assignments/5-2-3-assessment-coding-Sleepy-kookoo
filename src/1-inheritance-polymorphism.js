@@ -39,8 +39,11 @@ class AppleIPhone extends Phone {
     this.model = model
   }
   sendIMessage(phone, message) {
-    if (phone) return
-    return `Message: ${message} - sent from ${this.model}`
+    if (phone instanceof AppleIPhone) {
+      return `Message: ${message} - sent from ${this.model}`
+    } else {
+      return `Message could not be sent.`
+    }
   }
 }
 
