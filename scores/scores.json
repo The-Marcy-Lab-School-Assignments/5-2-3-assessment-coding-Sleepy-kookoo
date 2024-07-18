@@ -29,13 +29,13 @@
       "In&PoTe2": 1,
       "In&PoTe3": 1,
       "In&PoTe4": 1,
-      "In&PoTe5": 0,
+      "In&PoTe5": 1,
       "In&PoTe6": 1,
       "In&PoTe7": 0,
       "In&PoTe8": 1,
       "In&PoTe9": 1,
       "In&PoTe10": 1,
-      "In&PoTe11": 0,
+      "In&PoTe11": 1,
       "In&PoTe12": 1,
       "In&PoTe13": 1,
       "In&PoTe14": 0,
@@ -118,8 +118,8 @@
   },
   "humanReadable": {
     "Factory Function Tests": "5/5",
-    "finalTestScore": "FINAL SCORE: 30/35",
+    "finalTestScore": "FINAL SCORE: 32/35",
     "Has Many / Belongs To Tests": "15/15",
-    "Inheritance & Polymorphism Tests": "10/15"
+    "Inheritance & Polymorphism Tests": "12/15"
   }
 }
