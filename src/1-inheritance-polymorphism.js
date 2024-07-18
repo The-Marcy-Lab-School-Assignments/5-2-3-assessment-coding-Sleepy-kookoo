@@ -6,18 +6,39 @@ class Phone {
 
   addContact(newContact) {
     if (!newContact.name || !newContact.phoneNumber) return `Invalid`
-    if (newContact.phoneNumber) return `Invalid`
+
+    // Need to work on this!
     this.contacts.push(newContact)
     return `${newContact.name} added.`
   }
 
   removeContact(name) {
-    this.contacts.splice(this.contacts.findIndex((contact) => contact.name === name), 1)
+    let remove = (this.contacts.splice(this.contacts.findIndex((contact) => contact.name === name), 1))
+    if (remove) return `${name} removed.`
+
+    let find = ((this.contacts.includes((contact) => contact.name === name)))
+    // if (find === undefined) return `Contact not found.`
+    // Need to work on this!
+
+  }
+
+  makeCall(name) {
+    if ((this.contacts.find((contact) => contact.name === name))) {
+      return `Calling ${name}...`
+    } else {
+      return `Calling ${name}...`
+    }
   }
 }
 
-class AppleIPhone {
-
+class AppleIPhone extends Phone {
+  constructor(phoneNumber, model) {
+    super(phoneNumber);
+    this.model = model
+  }
+  sendIMessage(phone, message) {
+    return `Message: ${message} - sent from ${this.model}`
+  }
 }
 
 module.exports = {
