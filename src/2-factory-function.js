@@ -1,3 +1,8 @@
+/** FEEDBACK: Great job! You could have also written the methods like so: 
+ * checkBalance(){
+ * //code
+ * }
+ */
 const bankAccountFactory = (balance) => ({
   checkBalance: function () {
     if (!balance) balance = 0
